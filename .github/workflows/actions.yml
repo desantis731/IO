@@ -31,7 +31,6 @@ jobs:
             if [ ! -d 'io_client-${{secrets.IO_CLIENT_VERSION}}-${{secrets.RUNNER_OS_TYPE}}' ]; then
               wget "https://artifactory.internal.synopsys.com/artifactory/clops-local/sig/synopsys/com/clops/io_client/${{secrets.IO_CLIENT_VERSION}}/io_client-${{secrets.IO_CLIENT_VERSION}}-${{secrets.RUNNER_OS_TYPE}}.zip"
               unzip -o io_client-${{secrets.IO_CLIENT_VERSION}}-${{secrets.RUNNER_OS_TYPE}}.zip
-              chmod a+x ./blackduck.sh
               chmod a+x ./runBlackDuckScan.sh
             fi
             chmod +x io_client-${{secrets.IO_CLIENT_VERSION}}-${{secrets.RUNNER_OS_TYPE}}/io
