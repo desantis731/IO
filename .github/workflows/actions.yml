@@ -50,7 +50,7 @@ jobs:
         # SCM
         SYNOPSYS_IO_scm_type: "github"
         SYNOPSYS_IO_scm_owner: 'desantis731'
-        SYNOPSYS_IO_scm_repository_name: 'https://github.com/desantis731/synopsys_github_action'
+        SYNOPSYS_IO_scm_repository_name: 'https://github.com/desantis731/IO'
         SYNOPSYS_IO_scm_repository_branch_name: 'main'
         # SCM - GitHub
         SYNOPSYS_IO_github_token: ${{secrets.GITHUB_ACCESS_TOKEN}}
